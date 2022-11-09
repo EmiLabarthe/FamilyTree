@@ -39,28 +39,28 @@ namespace Program
             n5.AddChildren(n7);
 
             //Suma de edades
-            Visitor visitor = new AgeSum();
+            Visitor visitor = new AgeSumVisitor();
             visitor.Visit(n8);
             string Content = null;
             Content = visitor.Content();
             Console.WriteLine($"Las edades suman {Content} años");
 
             //Determinar edad mayor de hijos de Dios
-            Visitor visitor2 = new TheBiggest();
+            Visitor visitor2 = new TheBiggestOneVisitor();
             visitor2.Visit(n8);
             string Content2 = null;
             Content2 = visitor2.Content();
             Console.WriteLine($"El hijo más grande de Dios es {Content2}");
 
             //Determinar edad mayor de hijos de Messi
-            Visitor visitor3 = new TheBiggest();
+            Visitor visitor3 = new TheBiggestOneVisitor();
             visitor3.Visit(n1);
             string Content3 = null;
             Content3 = visitor3.Content();
             Console.WriteLine($"El hijo más grande de Messi es {Content3}");
 
             //Determinar el nombre más largo
-            Visitor visitor4 = new LargestName();
+            Visitor visitor4 = new LargestNameVisitor();
             visitor4.Visit(n8);
             string Content4 = null;
             Content4 = visitor4.Content();

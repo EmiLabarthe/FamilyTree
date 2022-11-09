@@ -2,7 +2,7 @@ using System;
 
 namespace Library;
 
-public class LargestName: Visitor
+public class LargestNameVisitor: Visitor
 {
     public int LongName = 0;
     public Person LargestPersonName {get; set;}

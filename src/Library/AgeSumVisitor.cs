@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Library;
 
-public class AgeSum: Visitor
+public class AgeSumVisitor: Visitor
 {
     public int SumOfAge = 0;
     public override void Visit(Node node)
